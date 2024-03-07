@@ -38,3 +38,18 @@ def argmin(a, axis=None, out=None, *, keepdims=np._NoValue):
         shape as `a.shape`.
 ```
 返回值可能是最小值的下标， a 为 list 类型是，返回的是所有的数中的而最小值的下表，也就是即使是多维数组，也是平铺成一个一维数组。 a 为 array 类型是，如果不设置 axis ，将等同于 list ，否则将按 axis 以 array的形式返回要求维度的最小值的下标。
+
+当最小值有多个时，将返回第一个的下标。
+## 其他相关的函数
+官方文档列举出其他的相关的函数。
+```
+    See Also
+    --------
+    ndarray.argmin, argmax
+    amin : The minimum value along a given axis.
+    unravel_index : Convert a flat index into an index tuple.
+    take_along_axis : Apply ``np.expand_dims(index_array, axis)``
+                      from argmin to an array as if by calling min.
+```
+
+参考资料：https://github.com/numpy/numpy/blob/v1.26.0/numpy/core/fromnumeric.py#L1236-L1325
