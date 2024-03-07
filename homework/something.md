@@ -4,19 +4,19 @@
 
 2、操作：
 
-push : 
+### push : 
 ```
 stack.push(item)
 ```
 无返回值
 
-pop:
+### pop:
 ```
 stack.pop()
 ```
 返回弹出的栈顶元素
 
-isEmpty:
+### isEmpty:
 ```
 stack.isEmpty()
 ```
@@ -27,19 +27,19 @@ stack.isEmpty()
 
 2、操作：
 
-push:
+### push:
 ```
 queue.push(item)
 ```
 无返回值
 
-pop:
+### pop:
 ```
 queue.pop()
 ```
 返回弹出的队首元素
 
-isEmpty:
+### isEmpty:
 ```
 stack.isEmpty()
 ```
@@ -50,19 +50,19 @@ stack.isEmpty()
 
 2、操作：
 
-push:
+### push:
 ```
 heap.push(item, priority)
 ```
 放入优先队列的实际是一个元组，由priority, count, item组成
 
-pop:
+### pop:
 ```
 heap.pop()
 ```
 弹出的是元素，返回的只有item
 
-update:
+### update:
 ```
 heap.update(item, priority)
 ```
@@ -70,4 +70,6 @@ heap.update(item, priority)
 
 ## PriorityQueueWithFunction
 1、从PriorityQueue继承而来，基础类型 函数，实体 ```PriorityQueue```, priorityFunction
-2、改写了push，通过priorityFunction计算出item的priority, 在调用PriorityQueue的push函数
+2、操作：
+
+改写了push，通过priorityFunction计算出item的priority, 在调用PriorityQueue的push函数，其他使用PriorityQueue的相关函数
