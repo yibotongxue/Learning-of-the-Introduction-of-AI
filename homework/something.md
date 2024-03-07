@@ -70,6 +70,7 @@ heap.update(item, priority)
 
 ## PriorityQueueWithFunction
 1、从PriorityQueue继承而来，基础类型 函数，实体 ```PriorityQueue```, priorityFunction
+
 2、操作：
 
 改写了push，通过priorityFunction计算出item的priority, 在调用PriorityQueue的push函数，其他使用PriorityQueue的相关函数
